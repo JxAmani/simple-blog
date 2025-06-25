@@ -10,17 +10,33 @@ This is a simple blog post manager built using HTML, CSS, and JavaScript. It con
 - Click to view details of any post
 - Add a new blog post with a title, image, and content
 
+✅ **Live Demo**: [https://simple-blog-chi-six.vercel.app/](https://simple-blog-chi-six.vercel.app/)
+
 ## Features
 
-- **GET** posts from a local API and display them on the page
-- **POST** new blog entries using a form
-- Responsive and styled user interface
+- Fetches blog posts from a local JSON server
+- Displays post details dynamically on click
+- Allows creation of new posts via a form
+- Clean, responsive user interface
 
 ## Setup Instructions
 
-1. **Clone or download** this project.
-2. Open a terminal and navigate to the project folder.
+1. Clone or download this project.
+2. Navigate to the project folder in your terminal.
+3. Start the JSON server:
+4. Open `index.html` in your browser or use `live-server`.
 
-3. Install `json-server` globally (if not already):
-   ```bash
-   npm install -g json-server
+5. Visit:
+- API: [http://localhost:3000/posts](http://localhost:3000/posts)
+- Frontend: your local `index.html` or use the live demo link above
+
+## Files
+
+- `index.html` – main page structure
+- `css/styles.css` – styling for the blog layout
+- `src/index.js` – JavaScript logic for fetching and posting
+- `db.json` – mock database with blog posts
+
+## Author
+
+Jeremy Amani – [jeremyamani336@gmail.com]
