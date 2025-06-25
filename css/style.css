@@ -16,7 +16,7 @@ h1 {
 }
 
 .section {
-  background-color: white;
+  background-color: lightslategray;
   border-radius: 12px;
   padding: 20px;
   width: 300px;
@@ -45,4 +45,35 @@ h1 {
 
 #add-post-btn:hover {
   background-color: green;
+}
+#new-post-form input,
+#new-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+}
+
+#new-post-form button {
+  background-color: seagreen;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#new-post-form button:hover {
+  background-color: lawngreen;
+}
+#post-detail img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
 }
