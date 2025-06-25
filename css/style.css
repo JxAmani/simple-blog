@@ -7,6 +7,12 @@ h1 {
   text-align: center;
   font-size: 2rem;
 }
+body{
+    background-image: url(https://wallup.net/wp-content/uploads/2019/09/611548-blog-blogger-computer-internet-typography-text-media-blogging-social-748x499.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .container {
   display: flex;
@@ -77,4 +83,7 @@ h1 {
 
 .hidden {
   display: none;
+}
+footer{
+    height: 750px;
 }
