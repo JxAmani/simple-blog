@@ -16,7 +16,7 @@ function displayPosts() {
       postList.innerHTML = posts.map(post =>
         `<div class="post-item" data-id="${post.id}">${post.title}</div>`
       ).join("");
-      // Attach event listeners after rendering
+      // Attach event listeners 
       document.querySelectorAll(".post-item").forEach(item => {
         item.addEventListener("click", () => {
           const id = item.dataset.id;
@@ -52,7 +52,7 @@ function handleNewPostSubmit() {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const newPost = {
+    const newPost = {//when adding new post
       title: document.getElementById("title").value,
       image: document.getElementById("image").value,
       content: document.getElementById("content").value
@@ -67,7 +67,7 @@ function handleNewPostSubmit() {
       body: JSON.stringify(newPost)
     })
     .then(res => res.json())
-    .then(post => {
+    .then(post => {        //callback functions
       displayPosts();       // refresh list
       showPostDetails(post); // show the new post
       form.reset();         // clear form
