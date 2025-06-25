@@ -4,8 +4,20 @@
       "id": 1,
       "title": "Welcome to the Blog",
       "content": "This is your first post!",
-      "author": "Jeremy"
+      "author": "Jeremy",
+      "image": "https://via.placeholder.com/300x200"
+    },
+    {
+      "title": "Popular brain tease",
+      "image": "https://images.pexels.com/photos/260024/pexels-photo-260024.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "content": " Why I let wooden pieces dominate my thoughts. It's a journey of blunders and triumphs.",
+      "id": 2
+    },
+    {
+      "title": "The Package Arrived",
+      "image": "https://intersmart.ae/wp-content/uploads/2024/08/Web-Design-for-E-commerce.webp",
+      "content": "Topic: The Joys (and Horrors) of Online Shopping\nTitle: The Package Arrived! (Now What Is It?)\n\nMy wallet's enemy. The thrill, the mystery, and the occasional regret of clicking 'buy now' from your couch.",
+      "id": 3
     }
   ]
 }
-
