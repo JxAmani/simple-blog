@@ -36,3 +36,12 @@ function showPostDetails(post) {
   `;
 }
 
+// 3. Show the new post form when button is clicked
+function setupAddPostButton() {
+  const btn = document.getElementById("add-post-btn");
+  const form = document.getElementById("new-post-form");
+
+  btn.addEventListener("click", () => {
+    form.classList.toggle("hidden");
+  });
+}
