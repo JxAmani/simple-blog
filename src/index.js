@@ -45,3 +45,33 @@ function setupAddPostButton() {
     form.classList.toggle("hidden");
   });
 }
+// 4. Handle new post form submission
+function handleNewPostSubmit() {
+  const form = document.getElementById("new-post-form");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const newPost = {
+      title: document.getElementById("title").value,
+      image: document.getElementById("image").value,
+      content: document.getElementById("content").value
+    };
+
+    // Send to backend
+    fetch(BASE_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newPost)
+    })
+    .then(res => res.json())
+    .then(post => {
+      displayPosts();       // refresh list
+      showPostDetails(post); // show the new post
+      form.reset();         // clear form
+      form.classList.add("hidden"); // hide form again
+    });
+  });
+}
