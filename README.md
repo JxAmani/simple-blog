@@ -11,6 +11,7 @@ This is a simple blog post manager built using HTML, CSS, and JavaScript. It con
 - Add a new blog post with a title, image, and content
 
 ✅ **Live Demo**: [https://simple-blog-chi-six.vercel.app/](https://simple-blog-chi-six.vercel.app/)
+GitHub Pages: [https://jxamani.github.io/simple-blog/](https://jxamani.github.io/simple-blog/)
 
 ## Features
 
