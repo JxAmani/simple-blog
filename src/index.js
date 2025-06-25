@@ -26,5 +26,13 @@ function displayPosts() {
       });
     });
 }
-
+// 2. Display post details in section-3
+function showPostDetails(post) {
+  const detailDiv = document.getElementById("post-detail");
+  detailDiv.innerHTML = `
+    <h3>${post.title}</h3>
+    <img src="${post.image}" alt="${post.title}" />
+    <p>${post.content}</p>
+  `;
+}
 
